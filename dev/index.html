@@ -26,6 +26,7 @@
 		</style>-->
 		<script src="navigation.js"></script>
 	</head>
+	
 	<body>
 		<div id="page_container">
 			<header>
@@ -70,10 +71,10 @@
 				</table>
 			</section>
 			
-			<section id="project_actions">
+			<div id="project_actions">
 				<div id="edit_actions">
 					<button onclick="gotoHref('file_nav.html')">Add...</button>
-					<button>View</button>
+					<button onclick="gotoHref('viewer.html')">View</button>
 					<button>Edit</button>
 					<button>Layout</button>
 				</div>
@@ -81,10 +82,10 @@
 					<button>Shuffle</button>
 					<button>Open project</button>
 					<button>Save project</button>
-					<button>Options</button>
-					<button>Action!</button>
+					<button onclick="gotoHref('config.html')">Options</button>
+					<button onclick="gotoHref('viewer.html')">Action!</button>
 				</div>
-			</section>
+			</div>
 		</div>
 	</body>
 </html>
