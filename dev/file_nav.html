@@ -3,6 +3,7 @@
 	<head>
 		<title>Select item... - SCADEN</title>
 		<meta charset="utf-8" />
+		<script src="navigation.js"></script>
 	</head>
 	
 	<body>
@@ -17,7 +18,7 @@
 			
 			<form action="index.html" method="get">
 				<select size="10">
-					
+					<option value="file">file.xxx</option>
 				</select>
 				
 				<input type="submit" />
@@ -30,6 +31,12 @@
 			
 			<div id="quick_access">
 				<h2>Quick-access</h2>
+			</div>
+			
+			<div id="options">
+				<h2>Options</h2>
+				<button onclick="gotoHref('editor.html')">Plain</button>
+				<button>Special Event</button>
 			</div>
 		</div>
 	</body>

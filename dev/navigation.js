@@ -21,3 +21,7 @@ function getParam(param) {
 	
 	return value;
 }
+
+function notImplemented() {
+	alert("Not implemented feature yet");
+}
