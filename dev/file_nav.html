@@ -16,13 +16,13 @@
 				</nav>
 			</header>
 			
-			<form action="index.html" method="get">
-				<select size="10">
-					<option value="file">file.xxx</option>
+			<form action="editor.html" method="get">
+				<select size="10" name="element">
+					<option value="file1">file.xxx</option>
 				</select>
 				
-				<input type="submit" />
-				<input type="button" name="cancel" value="Cancel" />
+				<input type="submit" name="status" value="validate" title="OK" />
+				<input type="button" name="status" value="cancel" title="Cancel" />
 			</form>
 			
 			<div id="drives">
@@ -39,5 +39,7 @@
 				<button>Special Event</button>
 			</div>
 		</div>
+		
+		<script src="display.js"></script>
 	</body>
 </html>

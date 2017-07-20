@@ -23,5 +23,6 @@ function getParam(param) {
 }
 
 function notImplemented() {
-	alert("Not implemented feature yet");
+	showMsgBox("Not implemented feature");
+	alert("Not implemented feature");
 }
