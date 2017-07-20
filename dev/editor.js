@@ -21,3 +21,11 @@ function centerAlignElem(elem) {
 function rightAlignElem(elem) {
 	document.getElementById(elem).style="text-align: right;";
 }
+
+function shadowElem(elem) {
+	document.getElementById(elem).style="text-shadow: 1px 1px";
+}
+
+function outlineElem(elem) {
+	document.getElementById(elem).style="-webkit-text-stroke: 4px navy;";
+}
