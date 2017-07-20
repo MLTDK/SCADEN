@@ -4,12 +4,16 @@
 		<title>Page edit - SCADEN</title>
 		<meta charset="utf-8" />
 		<script src="navigation.js"></script>
+		<script src="editor.js"></script>
 	</head>
 	
 	<body>
 		<div id="page_container">
 			
 			<div id="page_edit">
+				<div id="elem1">
+					Element 1
+				</div>
 			</div>
 			
 			<div id="edit_menu">
@@ -44,15 +48,15 @@
 					</div>
 					
 					<div id="element_decoration">
-						<button><b>B</b></button>
-						<button><i>I</i></button>
-						<button><u>U</u></button>
+						<button onclick="boldElem('elem1')"><b>B</b></button>
+						<button onclick="italicElem('elem1')"><i>I</i></button>
+						<button onclick="underlineElem('elem1')"><u>U</u></button>
 					</div>
 					
 					<div id="element_align">
-						<button>left</button>
-						<button>middle</button>
-						<button>right</button>
+						<button onclick="leftAlignElem('elem1')">left</button>
+						<button onclick="centerAlignElem('elem1')">middle</button>
+						<button onclick="rightAlignElem('elem1')">right</button>
 					</div>
 				</div>
 				
