@@ -10,7 +10,7 @@
 		<div id="page_container">
 			<header>
 				<nav id="main_nav">
-					<button>-</button>
+					<button onclick="gotoHref('index.html')">-</button>
 					<h1>File navigator</h1>
 					<button>i</button>
 				</nav>
@@ -21,8 +21,8 @@
 					<option value="file1">file.xxx</option>
 				</select>
 				
-				<input type="submit" name="status" value="validate" title="OK" />
-				<input type="button" name="status" value="cancel" title="Cancel" />
+				<input type="submit" value="OK" />
+				<input type="button" value="Cancel" onclick="gotoHref('index.html')" />
 			</form>
 			
 			<div id="drives">

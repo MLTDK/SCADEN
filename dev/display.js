@@ -1,4 +1,4 @@
-function showMsgBox(content_text) {
+function showMsgBox(contentText) {
 	var msgbox = document.createElement("div");
 	msgbox.id = "msgbox";
 	
@@ -9,18 +9,18 @@ function showMsgBox(content_text) {
 	
 	var content = document.createElement("p");
 	content.id = "msgbox_content";
-	var content_node = document.createTextNode(content_text);
-	content.appendChild(content_node);
+	var contentNode = document.createTextNode(contentText);
+	content.appendChild(contentNode);
 	
 	var closebtn = document.createElement("button");
 	closebtn.id = "msgbox_closebtn";
-	var closebtn_node = document.createTextNode("-");
-	closebtn.appendChild(closebtn_node);
+	var closebtnNode = document.createTextNode("-");
+	closebtn.appendChild(closebtnNode);
 	
 	var infobtn = document.createElement("button");
 	infobtn.id = "msgbox_infobtn";
-	var infobtn_node = document.createTextNode("i");
-	infobtn.appendChild(infobtn_node);
+	var infobtnNode = document.createTextNode("i");
+	infobtn.appendChild(infobtnNode);
 	
 	msgbox.appendChild(closebtn);
 	msgbox.appendChild(content);
