@@ -5,6 +5,17 @@
 		<meta charset="utf-8" />
 		<script src="navigation.js"></script>
 		<script src="editor.js"></script>
+		<style>
+			@font-face {
+				font-family: SFutura;
+				src: url("fonts/Futura/FuturaKoyu.ttf") format("truetype");
+			}
+			
+			#page_edit {
+				width: 640px;
+				height: 480px;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -44,7 +55,7 @@
 					</div>
 					
 					<div id="element_font">
-						<button>Font: </button>
+						<button onclick="fontElem('elem1')">Font: SFutura font 24</button>
 					</div>
 					
 					<div id="element_decoration">
