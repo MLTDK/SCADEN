@@ -4,7 +4,6 @@
 		<title>Page edit - SCADEN</title>
 		<meta charset="utf-8" />
 		<script src="navigation.js"></script>
-		<script src="editor.js"></script>
 		<style>
 			@font-face {
 				font-family: SFutura;
@@ -14,13 +13,25 @@
 			#page_edit {
 				width: 640px;
 				height: 480px;
+				
+				background-color: gray;
+				color: black;
+			}
+			
+			#elem1 {
+				position: absolute;
+				
+				cursor: default;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
 			}
 		</style>
 	</head>
 	
 	<body>
 		<div id="page_container">
-			
 			<div id="page_edit">
 				<div id="elem1">
 					Element 1
@@ -82,6 +93,7 @@
 			</div>
 		</div>
 		
+		<script src="editor.js"></script>
 		<script src="display.js"></script>
 	</body>
 </html>
