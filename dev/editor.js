@@ -1,9 +1,9 @@
 function shadowElem(elem) {
-	document.getElementById(elem).style = "text-shadow: 1px 1px";
+	document.getElementById(elem).style = "text-shadow: 1px 1px black";
 }
 
 function outlineElem(elem) {
-	document.getElementById(elem).style = "-webkit-text-stroke: 4px navy;";
+	if (confirm('Uggly function. Are you sure ?')) {document.getElementById(elem).style = "-webkit-text-stroke: 4px navy;";}
 }
 
 function fontElem(elem) {
@@ -54,10 +54,12 @@ function enableSelection() {
 		elemStorage = {};
 	var pageEdit = document.getElementById("page_edit");
 	
+	elem1.style.border = "1px solid yellow";
+	
 	elem1.addEventListener("mousedown", function(e) {
 		elemStorage.target = e.target;
-		elemStorage.offsetX = e.clientX - getElemOffset(elemStorage.target).left;
-		elemStorage.offsetY = e.clientY - getElemOffset(elemStorage.target).top;
+		elemStorage.offsetX = e.clientX - getElemOffset(elemStorage.target).left + getElemOffset(pageEdit).left;
+		elemStorage.offsetY = e.clientY - getElemOffset(elemStorage.target).top + getElemOffset(pageEdit).top;
 	});
 	
 	elem1.addEventListener("mouseup", function() {

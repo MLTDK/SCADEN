@@ -15,17 +15,18 @@
 				height: 480px;
 				
 				background-color: gray;
-				color: black;
-			}
-			
-			#elem1 {
-				position: absolute;
+				color: white;
 				
 				cursor: default;
 				-webkit-user-select: none;
 				-moz-user-select: none;
 				-ms-user-select: none;
 				user-select: none;
+			}
+			
+			#elem1 {
+				position: relative;
+				display: inline-block;
 			}
 		</style>
 	</head>
@@ -76,9 +77,9 @@
 					</div>
 					
 					<div id="element_align">
-						<button onclick="leftAlignElem('elem1')">left</button>
-						<button onclick="centerAlignElem('elem1')">middle</button>
-						<button onclick="rightAlignElem('elem1')">right</button>
+						<button onclick="leftAlignElem('page_edit')">left</button>
+						<button onclick="centerAlignElem('page_edit')">middle</button>
+						<button onclick="rightAlignElem('page_edit')">right</button>
 					</div>
 				</div>
 				
