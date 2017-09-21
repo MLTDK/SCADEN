@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page edit - SCADEN</title>
+		<meta charset="utf-8" />
+		<script src="navigation.js"></script>
+		<style>
+			@font-face {
+				font-family: SFutura;
+				src: url("fonts/Futura/FuturaKoyu.ttf") format("truetype");
+			}
+			
+			#page_edit {
+				width: 640px;
+				height: 480px;
+				
+				background-color: gray;
+				color: white;
+				
+				cursor: default;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			
+			#elem1 {
+				display: inline-block;
+				position: relative;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="page_container">
+			<div id="page_edit">
+				<div id="elem1">
+					Element 1
+				</div>
+			</div>
+			
+			<div id="edit_menu">
+				<nav id="edit_nav">
+					<button onclick="gotoHref('index.html')">-</button>
+					<h1>Design Text</h1>
+					<span>"Page 1" <| 1|></span>
+					<button>i</button>
+				</nav>
+				
+				<div id="element_position">
+				</div>
+				
+				<div id="color_palette">
+				</div>
+				
+				<div id="element_wipe">
+					<button>In...</button>
+					<button>Out...</button>
+				</div>
+				
+				<div id="element_style">
+					<div id="element_colors">
+						<button>Front</button>
+						<button onclick="shadowElem('elem1')">Shadow</button>
+						<button onclick="outlineElem('elem1')">Outline</button>
+						<button>Underline?</button>
+					</div>
+					
+					<div id="element_font">
+						<button onclick="fontElem('elem1')">Font: SFutura font 24</button>
+					</div>
+					
+					<div id="element_decoration">
+						<button onclick="boldElem('elem1')"><b>B</b></button>
+						<button onclick="italicElem('elem1')"><i>I</i></button>
+						<button onclick="underlineElem('elem1')"><u>U</u></button>
+					</div>
+					
+					<div id="element_align">
+						<button onclick="leftAlignElem('page_edit')">left</button>
+						<button onclick="centerAlignElem('page_edit')">center</button>
+						<button onclick="rightAlignElem('page_edit')">right</button>
+					</div>
+				</div>
+				
+				<div id="page_settings">
+					<button>Preview</button>
+					<button>Edit</button>
+					<button>Design</button>
+					
+					<button>OK</button>
+					<button>Cancel</button>
+				</div>
+			</div>
+		</div>
+		
+		<script src="editor.js"></script>
+		<script src="display.js"></script>
+	</body>
+</html>
