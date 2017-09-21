@@ -1,3 +1,14 @@
+function Elem(name, text) {
+	this.name = name;
+	this.text = text;
+	this.x = 10;
+	this.y = 10;
+}
+
+var e = new Elem("Elem", "Elem");
+console.log(e.name);
+console.log(e.text);
+
 function shadowElem(elem) {
 	document.getElementById(elem).style = "text-shadow: 1px 1px black";
 }
