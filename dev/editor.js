@@ -65,9 +65,9 @@ function enableSelection() {
 		elemStorage = {};
 	var pageEdit = document.getElementById("page_edit");
 	
-	elem1.style.border = "1px solid yellow";
-	
 	elem1.addEventListener("mousedown", function(e) {
+		elem1.style.border = "1px solid yellow";
+		
 		elemStorage.target = e.target;
 		elemStorage.offsetX = e.clientX - getElemOffset(elemStorage.target).left + getElemOffset(pageEdit).left;
 		elemStorage.offsetY = e.clientY - getElemOffset(elemStorage.target).top + getElemOffset(pageEdit).top;

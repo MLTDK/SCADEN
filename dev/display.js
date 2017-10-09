@@ -26,5 +26,9 @@ function showMsgBox(contentText) {
 	msgbox.appendChild(content);
 	msgbox.appendChild(infobtn);
 	
+	closebtn.addEventListener("click", function(e) {
+		document.body.removeChild(msgbox);
+	});
+	
 	document.body.appendChild(msgbox);
 }
